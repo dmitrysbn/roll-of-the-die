@@ -1,3 +1,9 @@
-for i in 0..10
-  puts "The result of your roll is #{Random.rand(6) + 1}."
+results = []
+
+10.times do
+  results << Random.rand(6) + 1
+end
+
+results.each do |result|
+  puts "The result of your roll is #{result}."
 end
